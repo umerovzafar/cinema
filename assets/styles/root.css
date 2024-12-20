@@ -1,0 +1,10 @@
+/* Переменные в CSS */
+
+:root {
+    --whiteColor: #fff;
+    --orange: #F18128;
+    --darkBlue: #040D1F;
+    --rob: 'Roboto';
+    --mon:'Montserrat';
+    --com:'Comfortaa';
+}

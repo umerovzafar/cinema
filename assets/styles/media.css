@@ -1,0 +1,89 @@
+@media (max-width:1200px) {
+    .films__cards-item {
+        min-width: 255px;
+    }
+
+    .films__cards {
+        justify-content: center;
+    }
+}
+
+@media (max-width:992px) {}
+
+@media (max-width:768px) {
+    .nav__logo {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .nav__logo img {
+        width: 80px;
+        height: 28px;
+    }
+
+    .nav__logo span {
+        font-size: 14px;
+    }
+
+    .poster__title {
+        font-size: 54px;
+    }
+
+    .poster__descr {
+        max-width: 470px;
+    }
+}
+
+@media (max-width:576px) {
+    .nav__list {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        background: black;
+        padding: 10px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: .5s;
+        z-index: 10;
+    }
+
+    .nav__menu-btn {
+        display: flex;
+    }
+
+    input[type='checkbox']:checked~.nav__list {
+        transform: scaleY(1);
+    }
+
+    .poster__title {
+        font-size: 34px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .poster__descr {
+        width: 100%;
+        text-align: center;
+    }
+
+    .poster__content {
+        align-items: center;
+    }
+
+    .poster__options {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .poster__options button {
+        width: 100%;
+    }
+
+    .films__cards {
+        justify-content: start;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+}
